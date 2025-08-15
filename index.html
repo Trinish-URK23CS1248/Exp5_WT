@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">CAKE SHOP</div>
+  <div class="cake-images">
+    <div>
+      <img src="rainbowcake.jpg" alt="Rainbow Cake">
+      <p>Rainbow Cake – Rs. 300</p>
+    </div>
+    <div>
+      <img src="chocolatecake.jpg" alt="Chocolate Cake">
+      <p>Chocolate Cake – Rs. 200</p>
+    </div>
+    <div>
+      <img src="redvelvet.jpg" alt="Red Velvet Cake">
+      <p>Red Velvet Cake – Rs. 250</p>
+    </div>
+    <div>
+      <img src="blackforest.jpg" alt="Black Forest Cake">
+      <p>Black Forest Cake – Rs. 350</p>
+    </div>
+  </div>
+  <div class="order-section">
+    <h2>Order Cake</h2>
+    <form id="orderForm">
+      <label>Rainbow Cake (Quantity)
+        <input type="number" id="rainbow" min="0" value="0">
+      </label>
+      <label>Chocolate Cake (Quantity)
+        <input type="number" id="chocolate" min="0" value="0">
+      </label>
+      <label>Red Velvet Cake (Quantity)
+        <input type="number" id="redvelvet" min="0" value="0">
+      </label>
+      <label>Black Forest Cake (Quantity)
+        <input type="number" id="blackforest" min="0" value="0">
+      </label>
+      <button type="button" id="placeOrderBtn">Place Order</button>
+    </form>
+    <button id="purchaseBtn" type="button">Purchase Order Bill!!!</button>
+    <div id="total" class="total-price"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
